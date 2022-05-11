@@ -1,0 +1,197 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f5f9fc;
+  color: #304659;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 0 3%;
+  background-color: #f5f9fc;
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #304659;
+
+}
+nav ul li{
+  padding: 0 2rem;
+}
+input[type="button"] {
+  background-color: #304659;
+  color: #f5f9fc;
+  border: none;
+  padding: 0.75rem 2rem;
+}
+
+h1{
+  font-weight: 700;
+  margin-top: 0;
+}
+main{
+  display: flex;
+  flex-direction: row;
+  padding: 5% 0;
+  row-gap: 0;
+}
+.features{
+  display: flex;
+  flex-direction: row;
+  padding: 5% 10%;
+}
+.hero-right img{
+  width: 100%;
+}
+.hero-right{
+  flex-grow: 2;
+}
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  padding: 0% 10% 0 10%;
+  flex-grow: 1;
+}
+
+input[type="text"] {
+  border: none;
+  background: #e1e9f0;
+}
+.third{
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10%;
+}
+.third p{
+  color: #9fb2c2;
+  font-size: 2rem;
+  width: 65%;
+}
+.background{
+  margin: auto;
+}
+.background img{
+  width: 100%;
+  margin-top: 2%;
+}
+.third h1{
+  font-size: 5rem;
+  width: 65%;
+}
+.hero-left h1{
+  font-size: 5rem;
+  width: 75%;
+}
+.hero-left p{
+  width: 65%;
+}
+.hero-left form{
+  width: 75%;
+}
+form {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+form input[type="text"]{
+  height: 3.5rem;
+  padding: 1%;
+  color: #9fb2c2;
+  flex-grow: 3;
+}
+form *{
+  margin: 0;
+  flex-grow: 1;
+}
+.hero h3{
+  color: #9fb2c2;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.mob-header{
+  display: none;
+}
+footer {
+
+}
+
+/* 
+    *************************
+*/
+@media screen and (max-width: 600px) {
+  .hero{
+    flex-direction: column;
+    align-items: center;
+  }
+  form{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features{
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 2rem;
+  }
+  .features div{
+    margin-bottom: 2rem;
+  }
+  .mob-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header{
+    display: none;
+  }
+  .mob-header button{
+
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
