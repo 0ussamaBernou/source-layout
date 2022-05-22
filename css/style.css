@@ -155,6 +155,9 @@ form *{
 .mob-header{
   display: none;
 }
+#myLinks{
+  display: none;
+}
 footer {
 
 }
@@ -186,12 +189,38 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: #304659 solid thin;
+    padding-top: 15px;
   }
+  #myLinks{
+    border-bottom: #304659 thin solid;
+  }
+  #myLinks ul li, #myLinks ul{
+    width: 100%;
+    float: left;
+  }
+
   header{
     display: none;
   }
   .mob-header button{
-
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 1%;
+    color: #fff;
+    background-color: #304659;
+    border: none;
+    border-radius: .5rem;
+    padding: 1% 2%;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  .mob-header button:hover{
+    color: #304659;
+    background-color:#9fb2c2;
+    cursor: pointer;
   }
 }
 
