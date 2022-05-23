@@ -5,23 +5,23 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-html{
-  font-family: 'Lato', sans-serif;
+html {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 62.5%;
 }
@@ -31,7 +31,6 @@ body {
   background-color: #f5f9fc;
   color: #304659;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -44,19 +43,21 @@ nav {
   padding: 0 3%;
   background-color: #f5f9fc;
 }
-ul{
+ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
-ul li a{
+ul li a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.6rem;
   color: #304659;
-
 }
-nav ul li{
+ul li a:hover {
+  color: #9fb2c2;
+}
+nav ul li {
   padding: 0 2rem;
 }
 input[type="button"] {
@@ -66,28 +67,28 @@ input[type="button"] {
   padding: 0.75rem 2rem;
 }
 
-.mob-header h1{
+.mob-header h1 {
   font-weight: 700;
   margin-top: 10px;
 }
-main{
+main {
   display: flex;
   flex-direction: row;
   padding: 5% 0;
   row-gap: 0;
 }
-.features{
+.features {
   display: flex;
   flex-direction: row;
   padding: 5% 10%;
 }
-.hero-right img{
+.hero-right img {
   width: 100%;
 }
-.hero-right{
+.hero-right {
   flex-grow: 2;
 }
-.hero-left{
+.hero-left {
   display: flex;
   flex-direction: column;
   padding: 0% 10% 0 10%;
@@ -98,37 +99,37 @@ input[type="text"] {
   border: none;
   background: #e1e9f0;
 }
-.third{
+.third {
   background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 10%;
 }
-.third p{
+.third p {
   color: #9fb2c2;
   font-size: 2rem;
   width: 65%;
 }
-.background{
+.background {
   margin: auto;
 }
-.background img{
+.background img {
   width: 100%;
   margin-top: 2%;
 }
-.third h1{
+.third h1 {
   font-size: 5rem;
   width: 65%;
 }
-.hero-left h1{
+.hero-left h1 {
   font-size: 5rem;
   width: 75%;
 }
-.hero-left p{
+.hero-left p {
   width: 65%;
 }
-.hero-left form{
+.hero-left form {
   width: 75%;
 }
 form {
@@ -137,29 +138,42 @@ form {
   margin: 0;
   padding: 0;
 }
-form input[type="text"]{
+form input[type="text"] {
   height: 3.5rem;
   padding: 1%;
   color: #9fb2c2;
   flex-grow: 3;
 }
-form *{
+form * {
   margin: 0;
   flex-grow: 1;
 }
-.hero h3{
+.hero h3 {
   color: #9fb2c2;
   font-weight: 700;
   font-size: 1.6rem;
 }
-.mob-header{
+.mob-header {
   display: none;
 }
-#myLinks{
+#myLinks {
   display: none;
 }
 footer {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+footer span{
+  padding-top: 3%;
+}
+footer a{
+  color: #3f5a71;
+}
+footer a:hover{
+  color: #688dad;
 }
 
 /* 
@@ -169,41 +183,42 @@ footer {
 */
 
 @media screen and (max-width: 600px) {
-  .hero{
+  .hero {
     flex-direction: column;
     align-items: center;
   }
-  form{
+  form {
     flex-direction: column;
     justify-content: center;
   }
-  .features{
+  .features {
     flex-direction: column;
     align-items: center;
     margin: 5rem 2rem;
   }
-  .features div{
+  .features div {
     margin-bottom: 2rem;
   }
-  .mob-header{
+  .mob-header {
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: #304659 solid thin;
     padding-top: 15px;
   }
-  #myLinks{
+  #myLinks {
     border-bottom: #304659 thin solid;
   }
-  #myLinks ul li, #myLinks ul{
+  #myLinks ul li,
+  #myLinks ul {
     width: 100%;
     float: left;
   }
 
-  header{
+  header {
     display: none;
   }
-  .mob-header button{
+  .mob-header button {
     position: absolute;
     left: 0;
     top: 0;
@@ -212,14 +227,14 @@ footer {
     color: #fff;
     background-color: #304659;
     border: none;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding: 1% 2%;
     margin-top: 30px;
     margin-left: 5%;
   }
-  .mob-header button:hover{
+  .mob-header button:hover {
     color: #304659;
-    background-color:#9fb2c2;
+    background-color: #9fb2c2;
     cursor: pointer;
   }
 }
